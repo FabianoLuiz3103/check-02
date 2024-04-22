@@ -1,0 +1,92 @@
+
+logonrmlocal@PA306MICRO25 MINGW64 ~/Desktop/check-02 (main)
+$ git config user.email 'fabianojesus1991@gmail.com'
+
+logonrmlocal@PA306MICRO25 MINGW64 ~/Desktop/check-02 (main)
+$ git config user.nome 'FabianoLuiz3103'
+
+logonrmlocal@PA306MICRO25 MINGW64 ~/Desktop/check-02 (main)
+$ git flow init
+
+Which branch should be used for bringing forth production releases?
+   - main
+Branch name for production releases: [main]
+Branch name for "next release" development: [develop]
+
+How to name your supporting branch prefixes?
+Feature branches? [feature/]
+Bugfix branches? [bugfix/]
+Release branches? [release/]
+Hotfix branches? [hotfix/]
+Support branches? [support/]
+Version tag prefix? []
+Hooks and filters directory? [C:/Users/logonrmlocal/Desktop/check-02/.git/hooks]
+
+
+logonrmlocal@PA306MICRO25 MINGW64 ~/Desktop/check-02 (develop)
+$ git branch main
+fatal: a branch named 'main' already exists
+
+logonrmlocal@PA306MICRO25 MINGW64 ~/Desktop/check-02 (develop)
+$ git status
+On branch develop
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        DocumentosCheckpoint/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+logonrmlocal@PA306MICRO25 MINGW64 ~/Desktop/check-02 (develop)
+$ git add .
+
+logonrmlocal@PA306MICRO25 MINGW64 ~/Desktop/check-02 (develop)
+$ git commit -m "Adicionando checkpoint"
+[develop 9e09978] Adicionando checkpoint
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 DocumentosCheckpoint/Checkpoint02-MODELOS-DA-QUALIDADE - 202
+4 - RED.pdf
+
+logonrmlocal@PA306MICRO25 MINGW64 ~/Desktop/check-02 (develop)
+$ git status
+On branch develop
+nothing to commit, working tree clean
+
+logonrmlocal@PA306MICRO25 MINGW64 ~/Desktop/check-02 (develop)
+$ git branch
+* develop
+  main
+
+logonrmlocal@PA306MICRO25 MINGW64 ~/Desktop/check-02 (develop)
+$ git checkou main
+git: 'checkou' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+logonrmlocal@PA306MICRO25 MINGW64 ~/Desktop/check-02 (develop)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+logonrmlocal@PA306MICRO25 MINGW64 ~/Desktop/check-02 (main)
+$ git push -u origin develop
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 163.70 KiB | 54.57 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/FabianoLuiz3103/check-02/pull/new/develop
+remote:
+To https://github.com/FabianoLuiz3103/check-02.git
+ * [new branch]      develop -> develop
+branch 'develop' set up to track 'origin/develop'.
+
+logonrmlocal@PA306MICRO25 MINGW64 ~/Desktop/check-02 (main)
+$ ^C
+
+logonrmlocal@PA306MICRO25 MINGW64 ~/Desktop/check-02 (main)
+$
